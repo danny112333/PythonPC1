@@ -1,0 +1,16 @@
+time = input("Introduzca la hora (formato 24 horas HH:MM): ")
+
+hours, minutes = time.split(":")
+hours = int(hours)
+minutes = int(minutes)
+
+time_float = hours + minutes / 60.0
+
+if 7 <= time_float <= 8:
+    print("Es hora del desayuno.")
+elif 12 <= time_float <= 13:
+    print("Es hora del almuerzo.")
+elif 18 <= time_float <= 19:
+    print("Es hora de la cena.")
+else:
+    print("No es hora de comer.")
