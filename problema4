@@ -1,0 +1,6 @@
+n = int(input("Introduzca un entero positivo: "))
+
+# Calculando la suma de los primeros N enteros positivos usando la fórmula
+suma = n * (n + 1) // 2  # Usamos // para realizar una división entera
+
+print(f"La suma de todos los enteros desde 1 hasta {n} es {suma}.")
