@@ -1,0 +1,25 @@
+def obtener_tipo_mime(nombre_archivo):
+    # Diccionario de extensiones y sus tipos MIME correspondientes
+    tipos_mime = {
+        '.gif': 'image/gif',
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+        '.png': 'image/png',
+        '.pdf': 'application/pdf',
+        '.txt': 'text/plain',
+        '.zip': 'application/zip'
+    }
+    
+    extension = '.' + nombre_archivo.split('.')[-1].lower()
+    
+    # Devolver el tipo MIME correspondiente o 'application/octet-stream' si no se encuentra
+    return tipos_mime.get(extension, 'application/octet-stream')
+    
+archivo1 = 'happy.jpg'
+archivo2 = 'document.pdf'
+archivo3 = 'archivo_desconocido.xyz'
+
+print(f'Nombre Archivo: {archivo1} Salida Esperada: {obtener_tipo_mime(archivo1)}')
+print(f'Nombre Archivo: {archivo2} Salida Esperada: {obtener_tipo_mime(archivo2)}')
+print(f'Nombre Archivo: {archivo3} Salida Esperada: {obtener_tipo_mime(archivo3)}')
+
