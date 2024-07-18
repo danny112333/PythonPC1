@@ -1,0 +1,21 @@
+numero1 = float(input("Introduce el primer número: "))
+numero2 = float(input("Introduce el segundo número: "))
+
+print("Elige una opción:")
+print("1. Sumar los dos números")
+print("2. Restar los dos números (el primero menos el segundo)")
+print("3. Multiplicar los dos números")
+
+opcion = int(input("Introduce la opción elegida (1/2/3): "))
+
+if opcion == 1:
+    resultado = numero1 + numero2
+    print(f"La suma de los dos números es: {resultado}")
+elif opcion == 2:
+    resultado = numero1 - numero2
+    print(f"La resta de los dos números es: {resultado}")
+elif opcion == 3:
+    resultado = numero1 * numero2
+    print(f"La multiplicación de los dos números es: {resultado}")
+else:
+    print("Opción no válida")
