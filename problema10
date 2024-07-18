@@ -2,7 +2,6 @@ def eliminar_elementos(lista):
     posiciones_a_eliminar = [0, 4, 5]
     return [item for idx, item in enumerate(lista) if idx not in posiciones_a_eliminar]
 
-# Ejemplo de uso
 lista_muestra = ['Rojo', 'Verde', 'Blanco', 'Negro', 'Rosa', 'Amarillo']
 lista_resultado = eliminar_elementos(lista_muestra)
 print(lista_resultado)  # Salida: ['Verde', 'Blanco', 'Negro']
