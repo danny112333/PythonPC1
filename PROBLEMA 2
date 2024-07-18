@@ -1,0 +1,5 @@
+# Problema 2
+consumo = float(input("Introduzca el monto total de su consumo en el restaurante: $"))
+porcentaje_propina = float(input("Introduzca el porcentaje de propina que desea dejar: "))
+propina = consumo * (porcentaje_propina / 100)
+print(f"Debe dejar ${propina:.2f} como propina.")
